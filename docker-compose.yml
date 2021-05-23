@@ -11,7 +11,7 @@ services:
             dockerfile: Dockerfile
         container_name: php
         volumes: 
-            - ./src:/var/www/html
+            - ./www:/var/www/html
             - ./config/php/php.ini:/usr/local/etc/php/php.ini
         ports: 
             - "8000:80"
